@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "fake-stock-market-generator": "^1.0.3",
+    "ws": "^8.12.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "stock-market-tracking",
+  "description": "",
+  "version": "1.0.0",
+  "main": "createStocks.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BENcao318/Stock-Market-Tracking.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BENcao318/Stock-Market-Tracking/issues"
+  },
+  "homepage": "https://github.com/BENcao318/Stock-Market-Tracking#readme"
+}
