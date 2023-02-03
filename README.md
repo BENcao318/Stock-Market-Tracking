@@ -28,74 +28,72 @@ Example Url:
 
 - User sign in: receive message "You are signed in!" if success
 
-```
-  {
-    "event": "signin"
-  }
+```json
+{
+  "event": "signin"
+}
 ```
 
 - User sign out: receive message "You are signed out!" if success
 
-```
-  {
-    "event": "signout"
-  }
+```json
+{
+  "event": "signout"
+}
 ```
 
 - Add balance: receive message "Deposit 6000 to your account" if success
 
-```
-  {
-    "event": "add balance",
-    "amount": 6000
-  }
+```json
+{
+  "event": "add balance",
+  "amount": 6000
+}
 ```
 
 - Buy shares: receive message "Successfully bought 6000 shares of VJ to your account" if success
 
-```
-  {
-    "event": "buy shares",
-    "amount": 6000,
-    "stock": ["VJ"]
-  }
+```json
+{
+  "event": "buy shares",
+  "amount": 6000,
+  "stock": ["VJ"]
+}
 ```
 
 - Sell shares: receive message "Successfully sold 3000 shares of VJ from your account" if success
 
-```
-  {
-    "event": "sell shares",
-    "amount": 3000,
-    "stock": ["VJ"]
-  }
+```json
+{
+  "event": "sell shares",
+  "amount": 3000,
+  "stock": ["VJ"]
+}
 ```
 
 - Subscribe live update: successfully send will give the server permission to continuously send the update of the selected stock price in the message every 6 seconds
 
-```
-  {
-    "event": "subscribe",
-    "stocks": ["VJ"]
-  }
+```json
+{
+  "event": "subscribe",
+  "stocks": ["VJ"]
+}
 ```
 
 - View portfolio: will send back the current portfolio of the user:
 
-```
+```json
 {
-    "stocks": {
-        "VJ": 3000
-    },
-    "balance": 6000,
-    "subscriptions": [
-        "VJ"
-    ]
+  "stocks": {
+    "VJ": 3000
+  },
+  "balance": 6000,
+  "subscriptions": ["VJ"]
 }
 ```
 
-```
-  {
-    "event": "view portfolio"
-  }
+```json
+{
+  "event": "view portfolio"
+}
 ```
